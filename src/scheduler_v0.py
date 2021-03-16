@@ -2,7 +2,7 @@ import schedule
 import time
 from datetime import datetime
 
-def myscheduler():
+def myscript():
     print('\n')
     print('=' * 40)
     print('Heure actuelle :', datetime.now().strftime("%H:%M:%S"))
@@ -10,14 +10,14 @@ def myscheduler():
     print('\n')
 
 # Configuration du Scheduler
-schedule.every(5).seconds.do(myscheduler)
-# schedule.every().minute.do(myscheduler)
-# schedule.every().hour.do(myscheduler)
-# schedule.every().day.at("10:30").do(myscheduler)
-# schedule.every(5).to(10).minutes.do(myscheduler)
-# schedule.every().monday.do(myscheduler)
-# schedule.every().wednesday.at("13:15").do(myscheduler)
-# schedule.every().minute.at(":17").do(myscheduler)
+schedule.every(5).seconds.do(myscript)
+# schedule.every().minute.do(myscript)
+# schedule.every().hour.do(myscript)
+# schedule.every().day.at("10:30").do(myscript)
+# schedule.every(5).to(10).minutes.do(myscript)
+# schedule.every().monday.do(myscript)
+# schedule.every().wednesday.at("13:15").do(myscript)
+# schedule.every().minute.at(":17").do(myscript)
 
 
 if __name__ == '__main__':
